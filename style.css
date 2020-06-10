@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+    text-align:center;
+}
+
 body {
     background: #224941 url('./img/bg.jpg') no-repeat center center/cover;
     color: #fff;
