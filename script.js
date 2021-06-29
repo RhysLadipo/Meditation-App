@@ -1,3 +1,10 @@
+const container = document.querySelector('.container')
+const text = document.querySelector('#text')
+
+const totalTime = 7500
+const breatheTime = (totalTime / 5) * 2
+const holdTime = totalTime / 5
+
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (!isChrome){
       $('#iframeAudio').remove()
@@ -5,13 +12,6 @@ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator
   else {
       $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background
   }
-
-const container = document.querySelector('.container')
-const text = document.querySelector('#text')
-
-const totalTime = 7500
-const breatheTime = (totalTime / 5) * 2
-const holdTime = totalTime / 5
 
 breatheAnimation()
 
