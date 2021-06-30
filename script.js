@@ -1,14 +1,14 @@
 const container = document.querySelector('.container')
 const text = document.querySelector('#text')
 
-const totalTime = 7500
+const totalTime = 16000
 const breatheTime = (totalTime / 5) * 2
 const holdTime = totalTime / 5
 
 breatheAnimation()
 
 function breatheAnimation() {
-    text.innerHTML = 'Breath In!'
+    text.innerHTML = 'Breath-in'
     container.className = 'container grow'
 
 
@@ -16,7 +16,7 @@ function breatheAnimation() {
         text.innerText = 'Hold'
 
         setTimeout(() => {
-            text.innerText = 'Breath Out!'
+            text.innerText = 'Breath-out'
             container.className = 'container shrink'
         }, holdTime)
     }, breatheTime)
