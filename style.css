@@ -65,7 +65,7 @@ body {
     left: 140px;
     width: 20px;
     height: 190px;
-    animation: rotate 15.5s linear forwards infinite;
+    animation: rotate 30.0s linear forwards infinite;
     transform-origin: bottom center;
 }
 
@@ -79,11 +79,11 @@ body {
 }
 
 .container.grow {
-    animation: grow 8s linear forwards;
+    animation: grow 16.0s linear forwards;
 }
 
 .container.shrink {
-    animation: shrink 8s linear backwards;
+    animation: shrink 16.0s linear backwards;
 }
 
 @keyframes rotate {
@@ -114,7 +114,7 @@ body {
     }
 
     to {
-    transform: scale(1)
+    transform: scale(-1)
 
     }
 }
